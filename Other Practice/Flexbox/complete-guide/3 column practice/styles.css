@@ -1,0 +1,76 @@
+/* mobile first approach */
+
+header,
+main,
+aside,
+footer {
+    text-align: center;
+}
+
+/* giving elements background colors */
+header {
+    background:skyblue;
+}
+
+footer {
+    background: pink;
+}
+
+.aside-1 {
+    background:yellow;
+}
+
+.aside-2 {
+    background:lime;
+}
+
+.main{
+    background:purple;
+    color:white;
+}
+
+
+.wrapper {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+/* make all items 100% width (flex-basis property) */
+.wrapper > * {
+    flex: 1 100%;
+}
+
+/* medium screens */ 
+@media all and (min-width:600px) {
+    .aside {
+        /* telling the sidebars to share a row */
+        flex:1 auto;
+    }
+}
+
+/* large screens */
+@media all and (min-width: 800px) {
+    /* move first sidebar to be on the left of/before main section */
+    .main {
+        flex: 3 0px;
+        order: 2;
+    }
+
+    .aside-1 {
+        order: 1;
+    }
+
+    .aside-2 {
+        order:3;
+    }
+
+    .footer {
+        order:4;
+    }
+
+    .header,
+    .footer {
+        height:50px;
+        line-height:50px;
+    }
+}

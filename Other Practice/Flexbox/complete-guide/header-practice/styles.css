@@ -1,0 +1,64 @@
+/* Let's make a right aligned nav element on top of website.
+On medium screens, we want it centered and on small screens we want it
+in a single column */
+
+.nav {
+    /* give container flex layout */
+    display:flex;
+
+    /* want rows and wrap */
+    flex-flow: row wrap;
+    
+    /* align items to end line on main-axis */
+    justify-content:flex-end;
+
+    background: linear-gradient(to bottom right, cyan, purple);
+}
+
+.nav li {
+    list-style:none;
+}
+
+.nav a {
+    text-decoration: none;
+    display:block;
+    padding:1em;
+    color:white;
+    font-size: large;
+}
+
+.nav a:hover {
+    background: linear-gradient(to top right, cyan, purple);
+    color:white;
+    border-radius:50%;
+}
+
+/* media query to center nav items on medium screens */
+@media all and (max-width:800px) {
+    .nav {
+        justify-content:space-around;
+    }
+}
+
+/* to make nav appear as columns for small screens */
+@media all and (max-width:600px) {
+    .nav {
+        flex-flow: column wrap;
+        padding:0;
+    }
+
+    .nav a {
+        text-align:center;
+        padding:10px;
+        border-top:1px solid rgb(255, 255, 255, 0.3);
+        border-bottom:1px solid rgb(0, 0, 0, 0.1);
+    }
+
+    .nav li:last-of-type a {
+        border-bottom:none;
+    }
+
+    .nav a:hover {
+        border-radius:0;
+    }
+}

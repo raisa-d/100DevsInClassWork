@@ -1,0 +1,55 @@
+/* container is what nav is positioned absolutely to*/
+.container {
+    position:relative;
+    border: 2px solid purple;
+}
+
+/* positioned absolutely in relation to the container element */
+nav {
+    position:absolute;
+    left:0px;
+    width:190px;
+    border: 1px dotted black;
+}
+
+/* make margin-left 200 to leave room for the nav */
+section {
+    margin-left:200px;
+    border: 1px dotted black;
+}
+
+/* setting margin-bottom to leave room for the footer */
+/* body {
+    margin-bottom:120px;
+} */
+
+/* put footer in fixed position so it is always at bottom of screen */
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    height:70px;
+    width:100%;
+    background:#fff;
+    text-align:center;
+    border: 1px dotted black;
+}
+
+.box {
+    float:left;
+    width:200px;
+    height:100px;
+    border: 1px dotted black;
+    line-height:100px;
+    text-align: center;
+}
+
+.after-box {
+    clear:both;
+    margin:-100px auto;
+    border: 1px dotted black;
+}
+
+.clearfix {
+    overflow:auto;
+}

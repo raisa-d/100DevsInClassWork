@@ -1,0 +1,38 @@
+.container {
+    /* vh is viewport height. this is 100% of viewport height */
+    height:100vh;
+    display:flex;
+    gap:25px;
+    place-content:
+    /* justify-content:space-around; */
+    /* align-content:safe end; */
+    /* flex-wrap:wrap; */
+}
+
+/* selecting any element with a class that starts with box- */
+[class ^="box-"] {
+    width:140px;
+    height: 140px;
+    background-color: skyblue;
+    border: 2px solid black;
+    font-size: 65px;
+    /* centering text */
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.box-1 {
+    flex: 2;
+    order:3;
+}
+
+.box-2 {
+    flex:3;
+    order:2;
+}
+
+.box-3 {
+    flex:4;
+    order:1;
+}

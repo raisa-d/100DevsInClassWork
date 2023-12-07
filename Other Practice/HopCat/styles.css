@@ -1,0 +1,209 @@
+/* 
+============
+Clearfix
+============
+*/
+.clearfix::after,
+.clearfix::before {
+    content:"";
+    display:table;
+}
+
+.clearfix::after {
+    clear:both;
+}
+
+/* 
+============
+Logos
+============
+*/
+
+/* main hopcat logo on header */
+.logo {
+    height: 41px;
+    margin: 5px 55px;
+    float:left;
+}
+
+/* cat logo that will frame video */
+.cat-logo {
+    height: 240px;
+    margin: -40px 42%;
+}
+
+/* cat logo in the footer */
+.footer.cat-logo {
+    height:150px;
+}
+
+/* 
+============
+Header
+============
+*/
+
+.fixed-header {
+    height:90px;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:white;
+    box-shadow: 1px 1px 8px 0 #999;
+}
+
+/* 
+============
+Navigation
+============
+*/
+/* horizontal navs as a whole is positioned relatively */
+.horizontal-nav {
+    position:relative;
+}
+
+/* all horizontal nav list items inline-block so they can be on same line */
+.horizontal-nav li {
+    display: inline-block;
+}
+
+/* primary nav items */
+.primary-nav li {
+    margin: 10px 10px;
+    font-size:17px;
+    right:19px;
+    word-spacing:2px;
+    font-family: "Oswald", Arial, sans-serif;
+}
+
+/* color of list item anchors */
+li a {
+    color: black;
+    font-weight:400;
+}
+
+/* mini nav container */
+.mini-nav {
+    width: 405px;
+    
+    /* center nav on page */
+    margin: 0 auto;
+
+    /* border: 1px solid red; */
+}
+
+/* mini nav lis */
+.mini-nav li {
+    display: inline-block;
+    text-align:center;
+    margin-right: 40px;
+}
+
+/* order online button */
+.order-online {
+    float:right;
+    margin-right: 55px;
+    position:relative;
+    bottom: 60px;
+    font-size: 14px;
+}
+
+/* styles shared between buttons with orange backgrounds (Our Location & Order Online) */
+.orange-background {
+    background: rgb(224, 154, 38);
+}
+
+.orange-background a {
+    color: #fff;
+}
+
+.orange-background:hover {
+    background:rgb(252, 211, 21);
+}
+
+.btn {
+    padding: 15px 30px;
+    font-family: "Oswald", Arial, sans-serif;
+    border-radius:10px;
+}
+
+.btn a {
+    font-weight:bold;
+}
+
+.our-story {
+    border: 2px solid rgb(224, 154, 38);
+}
+
+.our-story a {
+    color: rgb(224, 154, 38);
+}
+
+.our-story a:hover {
+    color:rgb(252, 211, 21);
+}
+
+/* 
+============
+Video
+============
+*/
+.video {
+    height:475px;
+    padding-top:190px;
+    background-clip:border-box;
+    line-height:400px;
+    text-align: center;
+    font-size:32px;
+}
+
+/* brown framing for video */
+.frame {
+    background:rgb(45, 27, 23);
+    height:250px;
+}
+
+/* 
+============
+Links
+============
+*/
+a {
+    text-decoration: none;
+}
+
+.primary-nav a:hover {
+    color:rgb(252, 211, 21);
+}
+
+/* 
+============
+Main Section
+============
+*/
+.main-section {
+    border: 2px solid black;
+    height:580px;
+    background: #fff;
+}
+
+.beerRightMeow {
+    margin: 7% auto;
+    text-transform: uppercase;
+    font-family: "Oswald", Arial, sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height:1.1em;
+    color: rgb(245, 207, 37);
+    text-align: center;
+}
+
+.tagline {
+    font-family: "Urbanist", "Oswald", Arial, sans-serif;
+    text-align: center;
+    font-size:18px;
+    line-height: 1.5em;
+    position:relative;
+    bottom:50px;
+}

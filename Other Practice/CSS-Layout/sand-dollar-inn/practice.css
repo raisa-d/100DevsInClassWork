@@ -1,0 +1,131 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* == FORMATTING == */
+/* Changing Box Sizing to Border Box*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+/* == LINKS == */
+
+/* Removing underlines and changing link colors */
+a {
+    color:white;
+    text-decoration: none;
+}
+
+/* == BACKGROUND == */
+body {
+    /* background: #121950; */
+    /* background:#e8daef; */
+    background-color: #2c3e50;
+    color:white;
+}
+
+/* == HEADER == */
+/* centering "The Sand Dollar Inn", making font size 36, changing font*/
+.logo {
+    font-size: 20px;
+    text-align: center;
+    font-family:"Karla", Georgia, 'Times New Roman', Times, serif;
+    margin: 30px 50px;
+    background: radial-gradient(#28cfd5, #ab28d5);
+    height:120px;
+    width: 200px;
+    line-height:120px;
+    border-radius: 50%;
+}
+
+/* when you hover over logo, radial gradient changes order of colors */
+.logo:hover {
+    background: radial-gradient(#ab28d5,#28cfd5);
+}
+
+/* == NAVIGATION == */
+
+/* bring nav to right side of screen and set margins */
+.nav {
+    text-align:right;
+    margin-right:50px;
+}
+
+/* space out each list item from each other and display on same line*/
+.nav li {
+    display:inline-block;
+    margin: 0 8px;
+}
+
+.primary-nav {
+    vertical-align: top;
+}
+
+/* Change color when list item links are hovered on */
+li a:hover {
+    color:#ab28d5;
+}
+
+/* == TAGLINE == */
+.tagline {
+    font-size:20px;
+}
+
+/* == PACKAGES == */
+.rooms {
+    margin: 50px 20px;
+}
+
+
+/* == PACKAGES == */
+.packages {
+    margin: 20px 20px;
+}
