@@ -1,0 +1,14 @@
+/* adding a 5px border will make the total width 110px */
+/* adding a 20px right padding makes total width 130px */
+section {
+    height:100px;
+    width:100px;
+    border: 5px solid red;
+    padding-right:20px;
+    margin:50px auto;
+}
+
+/* NOTES:
+padding pushes the border away from the element 
+margin is a bully, it pushes the box model around
+*/

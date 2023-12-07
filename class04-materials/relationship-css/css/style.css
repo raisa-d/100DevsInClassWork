@@ -1,0 +1,19 @@
+h1 {
+    color:purple;
+}
+
+section > h2 {
+    color: teal;
+}
+
+
+article > h2 {
+    color:pink;
+    font-weight:bold;
+    font-size: 30px;
+}
+
+/* specificity weight of this is the same or greater than the rule above, so this would overrides it in the cascade if it were above it */
+section article h2 {
+    color:orange;
+}

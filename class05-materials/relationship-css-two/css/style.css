@@ -1,0 +1,27 @@
+/* NO classes or IDs */
+/* Please Make only World and Zebra Blue */
+section > h2 {
+    color:blue;
+}
+
+/* Please Make only Zebra Purple */
+/* exemplifies the cascade, we overrode the previous color 
+for zebra as this specificity weight is higher */
+/* this has 0-0-3 specificity */
+section > h2 + h2 {
+    color: purple;
+}
+
+/* Please Make only Hufflepuff Gold */
+/* 0-0-4 specificity */
+/* could either have this as seciton article > h2 + h2 
+or could take out the section and just move this to the bottom of the cascade */
+section article > h2 + h2 {
+    color:gold;
+}
+
+/* Please keep Hufflepuff Gold and make ONLY Unicorn Gray  */
+/* 0-0-2 specificity */
+section article > h2 {
+    color: gray;
+}

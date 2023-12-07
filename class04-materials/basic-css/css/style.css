@@ -1,0 +1,35 @@
+/* change h1 to have font color blue, be underlined, and have a gold background color */
+h1 {
+    color: rgb(0, 166, 255);
+    text-decoration: underline;
+    background-color:gold;
+    /* display:inline-block; */
+}
+
+/* h2 will be purple, bold, 25px, and have an orange border */
+h2 {
+    color:rgb(173, 57, 173);
+    font-weight:700;
+    font-size: 25px;
+    border: 5px solid orange
+}
+
+/* make section have a width of 50%, height of 200px, gray background, black border, paragraph text white */
+section {
+    /* display:inline-block; */
+    color:white;
+    width: 50%;
+    height:200px;
+    background-color: gray;
+    border:4px solid black;
+}
+
+/* have a background of black, light green border, roboto font family, white text, 20px text */
+footer > h3 {
+    /* display:inline-block; */
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto','sans-serif';
+    border: 6px solid rgb(120, 200, 120);
+}

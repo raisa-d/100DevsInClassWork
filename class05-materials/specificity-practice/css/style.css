@@ -1,0 +1,24 @@
+/* Please Make ONLY Rhino and Zebra Blue */
+#rhino,
+#zebra {
+    color:blue;
+}
+
+/* Please Make only Hufflepuff Gold */
+#bestHouse {
+    color:gold;
+}
+
+/* Please select Duck with the highest level of specificity possible */
+/* 1157 points */
+/* find me an h2 that has both of these classes. that's why no spaces*/
+html > body > h1#hi + section.top + section.middle + article.areDucksDinosaurs > h2.likesToQuack.fight1Or100 {
+    color:lime !important;
+}
+
+
+/* Please select Rhino with the highest level of specificity possible */
+/* 1235 points */
+html > body > h1#hi + section.top > h2#rhino.africa.fourLegs {
+    text-decoration:underline !important;
+}
