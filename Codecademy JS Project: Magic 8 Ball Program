@@ -1,0 +1,51 @@
+const userName = 'Raisa';
+
+// if username is entered, say hello to them. if it is empty, just say hello
+userName ? console.log(`Hello ${userName}!\n`) : console.log('Hello!\n')
+
+// var to store question user wants to ask magic 8 ball
+const userQuestion = 'Will I find love?';
+
+// print the question asked. if they have a username, say it otherwise say "you". if they asked a question, print it else print that they asked nothing
+console.log(`${userName ? userName : "You"} asked the Magic Eight Ball:\n${userQuestion ? userQuestion : "Nothing...you're seriously not curious?"}`)
+
+// generate random number between 0 and 7. 8 is exclusive (not included in the range). floor used to round it down to an integer
+const randomNumber = Math.floor(Math.random() * 8)
+
+// variable to hold eight ball's wisdom
+let eightBall = '';
+
+switch(randomNumber) {
+  case 0: 
+    eightBall = 'It is certain';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 1:
+    eightBall = 'It is decidedly so';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 2:
+    eightBall = 'Reply hazy, try again';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 3:
+    eightBall = 'Cannot predict now';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 4:
+    eightBall = 'Do not count on it';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 5:
+    eightBall = 'My sources say no';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 6:
+    eightBall = 'Outlook not so good';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+  case 7:
+    eightBall = 'Signs point to yes';
+    console.log(`\nThe Magic Eight Ball Says:\n${eightBall}`);
+    break;
+}
