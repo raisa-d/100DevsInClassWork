@@ -1,0 +1,26 @@
+// generate integer between 0 and 999
+let raceNumber = Math.floor(Math.random() * 1000);
+
+// boolean to track whether runner registered early or not
+let earlyRegistration = false;
+
+// var to store runner's age
+let runnerAge = 18;
+
+// if runner is an adult and registered early, add 1000 to their race number
+if (runnerAge > 18 && earlyRegistration) {
+  raceNumber += 1000
+}
+
+// early adults
+if (runnerAge > 18 && earlyRegistration) {
+  console.log(`You will race at 9:30am and your race number is: ${raceNumber}`)
+// late adults
+} else if (runnerAge > 18 && !earlyRegistration) {
+  console.log(`You will race at 11:00am and your race number is: ${raceNumber}`)
+// teens
+} else if (runnerAge < 18) {
+  console.log(`You will race at 12:30pm and your race number is: ${raceNumber}`)
+} else {
+  console.log('Please see the registration desk.')
+}
