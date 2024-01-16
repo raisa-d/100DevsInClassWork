@@ -1,4 +1,14 @@
 //Create a stopwatch object that has four properties and three methods
+
+// ==== USING LITERAL NOTATION ====
+// create stopwatch with literal notation
+let blackStopWatch = {}
+// first property on stopwatch
+blackStopWatch.currentTime = 12
+// first method on stopwatch
+blackStopWatch.tellTime = time => console.log(`The current time is ${time}`)
+
+// ==== USING CLASSES ====
 class Stopwatch {
     constructor(startTime, endTime, watchColor, chainColor) {
         this.startTime = startTime;
