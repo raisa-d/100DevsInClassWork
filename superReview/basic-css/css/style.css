@@ -1,0 +1,38 @@
+/* h1 Make this text blue, underlined, and have a gold background */
+h1 {
+    background: gold;
+    color:blue;
+    text-decoration: underline;
+}
+
+/* h2 Make this text purple, bolded, 25px, and hav an orange border */
+h2 {
+    border: 5px solid orange;
+    color:purple;
+    font-size: 25px;
+    font-weight:700;
+}
+
+/* p Make this section width of 50%, height of 200px, background of gray, border of black, and the paragraph text white */
+section {
+    background:gray;
+    border:2px solid black;
+    color:white;
+    height:200px;
+    width:50%;
+}
+
+/* Make this footer have a black background, with light green border, and this text 20px white plus a font-family of Roboto */
+footer {
+    background:black;
+    border:5px solid lightgreen;
+    height:200px;
+}
+
+footer h3 {
+    font-size:20px;
+    color:white;
+    font-family:"Roboto", Helvetica, sans-serif;
+    line-height:200px;
+    text-align:center;
+}

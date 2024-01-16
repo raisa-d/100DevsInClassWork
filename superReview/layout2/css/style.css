@@ -1,0 +1,40 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+header,
+footer,
+main,
+section {
+  border:1px solid black;
+}
+
+header,
+footer {
+  height:100px;
+}
+
+main {
+  height:150px;
+}
+
+section {
+  height:200px;
+}
+
+.bottom {
+  display:flex;
+}
+
+.bottom section {
+  flex:1;
+}
+
+.bottom section + section {
+  flex:2;
+}
