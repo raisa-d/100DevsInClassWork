@@ -2,7 +2,7 @@
 This repository contains all of my solutions to the in class work I completed as part of the [100Devs Agency](https://100devs.org/) training program.
 
 ## Table of Contents
-- [How It's Made](how-its-made)
+- [How It's Made](#how-its-made)
 - [Lessons Learned](#lessons-learned)
 - [Contact](#contact)
 
