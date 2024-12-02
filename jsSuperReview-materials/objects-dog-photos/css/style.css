@@ -1,0 +1,40 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+.flex {display:flex;}
+.col {flex-flow: column;}
+
+button {
+  margin: 1rem;
+  width: 10rem;
+  background: rgba(211, 128, 211, 0.515);
+  border: 0;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10rem;
+  align-self:center;
+}
+
+button:hover {
+  background: rgba(20, 110, 110, 0.402);
+  cursor: pointer;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
